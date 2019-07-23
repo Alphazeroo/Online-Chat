@@ -6,23 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Online-Chat</title>
     <style>
-        .div1{
-            background-color: brown;
-            height:100px;
+        html, body {
+            margin: 0;
+            padding: 0;
         }
-        .div2{
+
+        .topbar {
+            background-color: brown;
+            height: 100px;
+        }
+
+        .content {
             background-color: black;
             height: 700px;
         }
-        .div3{
+
+        .bottombar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
             background-color: brown;
             height: 100px;
             text-align: center;
         }
-        #marka{
+
+        #marka {
             block-size: 100%
         }
-        .tuş{
+
+        .tuş {
             width: 200px;
             height: 100px;
         }
@@ -31,11 +43,11 @@
     </style>
 </head>
 <body>
-<div class="div1">
+<div class="topbar">
     <img id="marka" src="img/image.png" alt="">
 </div>
-<div class="div2"></div>
-<div class="div3">
+<div class="content"></div>
+<div class="bottombar">
     <form>
         <input class="tuş" type="button" value="Kamera">
         <input class="tuş" type="button" value="Mikrofon">
