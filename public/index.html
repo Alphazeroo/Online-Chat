@@ -1,123 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Online-Chat</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="main.css" rel="stylesheet">
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-        }
 
-        .topbar {
-            background-color: #d01311;
-            height: 100px;
-        }
+    <title>Online Video-Chat</title>
 
-        .content {
-            height: 700px;
-
-        }
-        .person1{
-            background-color: #79c2ff;
-            float: left;
-            width: 25%;
-            height: 800px;
-        }
-        .person2{
-            background-color: #65f78b;
-            float: right;
-            width: 25%;
-            height: 800px;
-        }
-
-        .person3{
-            background-color: palevioletred;
-            float:left;
-            width: 25%;
-            height: 800px;
-
-        }
-
-        .person4{
-            background-color: #fbaa3b;
-            float: right;
-            width: 25%;
-            height: 800px;
-        }
-
-
-        .bottombar {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: #d01311;
-            height: 100px;
-            text-align: center;
-        }
-
-        #marka {
-            block-size: 100%
-        }
-
-        .button {
-            width: 200px;
-            height: 100px;
-        }
-        .img{
-            position: center;
-            width: 100%;
-            height: 100%;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="/css/main.css" />
 
 </head>
-<body>
-<div class="topbar">
-    <img id="marka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyU9CN9xlaJWwjoEUYBA_PH_yQROtsV1BSIEBRCp2n7NMYajpXA" alt="">
-</div>
-<div class="container-fluid">
-    <div class="row h-100 w-100">
-        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
-            <div class="embed-responsive embed-responsive-16by9">
-                <video src="" class="embed-responsive-item"></video>
-            </div>
-        </div>
-        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
-            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
-                <img style="border: solid red ;width: 100%" src="img/image.png">
-            </div>
-        </div>
-        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
-            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
-                <img style="border: solid red ;width: 100%" src="img/image.png">
-            </div>
-        </div>
-        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
-            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
-                <img style="border: solid red ;width: 100%" src="img/image.png">
-            </div>
-        </div>
-        <span></span>
-</div>
-<div class="bottombar">
-    <form>
-        <input class="button" type="button" value="Kamera">
-        <input class="button" type="button" value="Mikrofon">
-        <input class="button" type="button" value="Sonlandır">
-    </form>
-    </div>
-</div>
 
+<body>
+
+<h1>Online Video-Chat</h1>
+
+<div id="videos">
+    <video id="localVideo" autoplay muted></video>
+    <video id="remoteVideo" autoplay></video>
+
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
-<script src="bundle.js"></script>
+<script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+<script src="js/main.js"></script>
 
 </body>
+
 </html>
