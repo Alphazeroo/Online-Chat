@@ -12,104 +12,44 @@
             margin: 0;
             padding: 0;
         }
-
         .topbar {
             background-color: #d01311;
             height: 100px;
         }
-
-        .content {
-            height: 700px;
-
-        }
-        .person1{
-            background-color: #79c2ff;
-            float: left;
-            width: 25%;
-            height: 800px;
-        }
-        .person2{
-            background-color: #65f78b;
-            float: right;
-            width: 25%;
-            height: 800px;
-        }
-
-        .person3{
-            background-color: palevioletred;
-            float:left;
-            width: 25%;
-            height: 800px;
-
-        }
-
-        .person4{
-            background-color: #fbaa3b;
-            float: right;
-            width: 25%;
-            height: 800px;
-        }
-
-
-        .bottombar {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            background-color: #d01311;
-            height: 100px;
-            text-align: center;
-        }
-
-        #marka {
-            block-size: 100%
-        }
-
-        .button {
-            width: 200px;
-            height: 100px;
-        }
-        .img{
-            position: center;
-            width: 100%;
-            height: 100%;
-        }
-
-
     </style>
-
 </head>
 <body>
 <div class="topbar">
     <img id="marka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyU9CN9xlaJWwjoEUYBA_PH_yQROtsV1BSIEBRCp2n7NMYajpXA" alt="">
 </div>
-<div class="content">
-
-        <div class="person1">
-
+<div class="container-fluid">
+    <div class="row h-100 w-100">
+        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video src="" class="embed-responsive-item"></video>
+            </div>
         </div>
-        <div class="person2">
-
+        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
+            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
+                <img style="border: solid red ;width: 100%" src="img/image.png">
+            </div>
         </div>
-
-        <div class="person3">
-
+        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
+            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
+                <img style="border: solid red ;width: 100%" src="img/image.png">
+            </div>
         </div>
-
-        <div class="person4">
-
+        <div style="width: 25% !important;" class="col-12 col-sm-6 d-flex justify-content-center">
+            <div id="peerDiv" class="embed-responsive embed-responsive-16by9">
+                <img style="border: solid red ;width: 100%" src="img/image.png">
+            </div>
         </div>
-
-
-
-
-
+    </div>
 </div>
-<div class="bottombar">
-    <form>
-        <input class="button" type="button" value="Kamera">
-        <input class="button" type="button" value="Mikrofon">
-        <input class="button" type="button" value="Sonlandır">
-    </form>
-</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="bundle.js"></script>
+
 </body>
 </html>
