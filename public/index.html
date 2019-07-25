@@ -12,13 +12,72 @@
             margin: 0;
             padding: 0;
         }
+
         .topbar {
             background-color: #d01311;
             height: 100px;
         }
-    </style>
-</head>
 
+        .content {
+            height: 700px;
+
+        }
+        .person1{
+            background-color: #79c2ff;
+            float: left;
+            width: 25%;
+            height: 800px;
+        }
+        .person2{
+            background-color: #65f78b;
+            float: right;
+            width: 25%;
+            height: 800px;
+        }
+
+        .person3{
+            background-color: palevioletred;
+            float:left;
+            width: 25%;
+            height: 800px;
+
+        }
+
+        .person4{
+            background-color: #fbaa3b;
+            float: right;
+            width: 25%;
+            height: 800px;
+        }
+
+
+        .bottombar {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: #d01311;
+            height: 100px;
+            text-align: center;
+        }
+
+        #marka {
+            block-size: 100%
+        }
+
+        .button {
+            width: 200px;
+            height: 100px;
+        }
+        .img{
+            position: center;
+            width: 100%;
+            height: 100%;
+        }
+
+
+    </style>
+
+</head>
 <body>
 <div class="topbar">
     <img id="marka" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtyU9CN9xlaJWwjoEUYBA_PH_yQROtsV1BSIEBRCp2n7NMYajpXA" alt="">
@@ -45,6 +104,14 @@
                 <img style="border: solid red ;width: 100%" src="img/image.png">
             </div>
         </div>
+        <span></span>
+</div>
+<div class="bottombar">
+    <form>
+        <input class="button" type="button" value="Kamera">
+        <input class="button" type="button" value="Mikrofon">
+        <input class="button" type="button" value="Sonlandır">
+    </form>
     </div>
 </div>
 
