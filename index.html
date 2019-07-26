@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Realtime communication with WebRTC</title>
+  <title>Video-Chat</title>
 
   <link rel="stylesheet" href="/css/main.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -11,6 +11,10 @@
 </head>
 
 <body>
+
+  <div id="topbar">
+    <img id="marka" src="img/mobiliz.png"">
+  </div>
 
   <h1>Online Video-Chat</h1>
 
@@ -27,14 +31,15 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
 
-
-
-
+  <div id="bottombar">
+    <form>
+      <input class="button" type="button" value="Kamera">
+      <input class="button" type="button" value="Mikrofon">
+      <input class="button" type="button" value="Sonlandır">
+    </form>
+  </div>
 
   <script src="/socket.io/socket.io.js"></script>
   <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>

@@ -1,8 +1,27 @@
-body {
-  font-family: sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
-video {
-  max-width: 100%;
-  width: 320px;
+#topbar {
+  background-color: #d01311;
+  height: 100px;
+}
+
+#bottombar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #d01311;
+  height: 100px;
+  text-align: center;
+}
+
+#marka {
+  block-size: 100%
+}
+
+.button {
+  width: 200px;
+  height: 100px;
 }
